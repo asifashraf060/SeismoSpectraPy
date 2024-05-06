@@ -23,9 +23,10 @@ Description: SeismoSpectraPy is a Python-based software that automates the proce
 		*.mseed files* (downloaded obspy traces in mseed format)
 		*eq_info.txt* (text file of earthquake information for the downloaded mseed files)
 		*st_info.txt* (text file for station information)
-### Execute frequency decompositions
-- Input parameters:
+### Perform frequency decompositions
+1. Execute the script 'decomp_analysis.py'. This script calculates multispectral Power Spectral Density (PSD) estimates and performs Hilbert-Huang Transform (HHT) decomposition on each downloaded earthquake data set. The script requires the user to follow a series of steps to complete the frequency decomposition for each earthquake. For detailed instructions, refer to the 'analysis_steps.pdf' document located in the docs folder.
+	- Input parameters:
 		*root_dir* (*our_dir* from 'download_waveforms.py')
 		*min_eq* (minimum number of earthquakes required to start )
-- Output:
-		see 'analysis_steps.pdf' in the docs
+	- Output:
+		Figures of frequency decomposition in .png format for each earthquake and a text file containing the details of every decomposition result
