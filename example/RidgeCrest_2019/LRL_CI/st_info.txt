@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+317            CI             LRL            35.47954       -117.68212     

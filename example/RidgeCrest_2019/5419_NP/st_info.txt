@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1295           NP             5419           35.64906       -117.66187     
