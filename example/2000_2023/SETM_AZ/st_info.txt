@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+18             AZ             SETM           33.5097        -116.5615      

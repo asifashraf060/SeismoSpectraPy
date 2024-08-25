@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+17             AZ             SCI2           32.915         -118.4879      

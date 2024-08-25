@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+808            NC             J020           37.766033      -122.441139    

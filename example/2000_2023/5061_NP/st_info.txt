@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1221           NP             5061           33.1266        -115.5159      

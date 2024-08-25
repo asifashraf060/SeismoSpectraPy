@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+138            CI             ARV            35.1269        -118.83009     

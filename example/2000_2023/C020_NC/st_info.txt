@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+682            NC             C020           37.800846      -122.20752     

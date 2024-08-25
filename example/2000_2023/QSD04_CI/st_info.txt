@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+480            CI             QSD04          33.257301      -116.348099    

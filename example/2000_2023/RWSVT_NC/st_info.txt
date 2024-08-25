@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+979            NC             RWSVT          37.941719      -122.262207    

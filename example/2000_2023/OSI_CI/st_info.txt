@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+367            CI             OSI            34.6145        -118.7235      

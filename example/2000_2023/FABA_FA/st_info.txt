@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+618            FA             FABA           34.066799      -118.442001    

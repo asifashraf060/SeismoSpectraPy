@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+732            NC             C070           37.702782      -122.131828    

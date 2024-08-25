@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1451           SB             WLA01          33.097599      -115.530602    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1218           NP             5058           32.75172       -115.59516     

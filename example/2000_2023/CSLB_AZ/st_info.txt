@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+4              AZ             CSLB           33.7799        -118.1123      

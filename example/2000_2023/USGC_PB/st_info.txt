@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1428           PB             USGC           33.030064      -116.085335    

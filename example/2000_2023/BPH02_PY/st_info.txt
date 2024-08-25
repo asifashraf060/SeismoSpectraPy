@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1429           PY             BPH02          33.6106        -116.455002    

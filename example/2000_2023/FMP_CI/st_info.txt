@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+240            CI             FMP            33.712639      -118.293808    

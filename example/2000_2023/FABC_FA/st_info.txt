@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+620            FA             FABC           34.066799      -118.442001    

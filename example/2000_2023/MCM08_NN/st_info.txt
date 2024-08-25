@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1010           NN             MCM08          38.1599        -118.0522      

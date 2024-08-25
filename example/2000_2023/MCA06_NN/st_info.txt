@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1007           NN             MCA06          38.0089        -117.8818      

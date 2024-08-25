@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1415           PB             P483           33.059166      -116.569328    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+643            MX             DEPC2          32.627266      -115.485504    

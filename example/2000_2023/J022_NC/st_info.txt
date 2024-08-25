@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+810            NC             J022           37.629978      -122.44516     

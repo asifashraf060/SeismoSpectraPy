@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+587            CI             VOG            36.32098       -119.382263    

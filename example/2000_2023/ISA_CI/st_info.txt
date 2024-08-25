@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+283            CI             ISA            35.66278       -118.47403     

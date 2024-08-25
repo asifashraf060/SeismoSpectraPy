@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1297           NP             5422           34.18504       -118.44698     

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1455           SB             WLA06          33.097599      -115.530602    

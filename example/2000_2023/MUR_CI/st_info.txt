@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+349            CI             MUR            33.59999       -117.19543     

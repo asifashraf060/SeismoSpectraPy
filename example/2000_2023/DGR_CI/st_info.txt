@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+214            CI             DGR            33.65001       -117.00947     

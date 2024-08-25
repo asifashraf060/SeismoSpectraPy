@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+247            CI             FUR            36.46703       -116.86322     

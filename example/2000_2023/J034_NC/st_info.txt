@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+822            NC             J034           37.370224      -122.113449    

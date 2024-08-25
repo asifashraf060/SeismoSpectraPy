@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1009           NN             MCM07          38.2274        -117.7463      

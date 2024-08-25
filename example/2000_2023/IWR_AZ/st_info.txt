@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+9              AZ             IWR            33.729401      -116.767601    

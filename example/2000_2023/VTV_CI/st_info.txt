@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+588            CI             VTV            34.56065       -117.3296      

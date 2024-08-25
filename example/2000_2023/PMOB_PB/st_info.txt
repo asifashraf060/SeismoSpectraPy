@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1423           PB             PMOB           33.357243      -116.85955     

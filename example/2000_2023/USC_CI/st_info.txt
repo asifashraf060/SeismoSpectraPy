@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+580            CI             USC            34.019192      -118.286308    

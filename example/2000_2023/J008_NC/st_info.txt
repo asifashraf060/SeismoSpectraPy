@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+796            NC             J008           37.475922      -122.188164    

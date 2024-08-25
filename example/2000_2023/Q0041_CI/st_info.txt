@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+432            CI             Q0041          34.172039      -117.427612    

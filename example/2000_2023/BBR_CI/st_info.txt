@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+147            CI             BBR            34.2623        -116.92075     

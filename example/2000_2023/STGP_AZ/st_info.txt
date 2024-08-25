@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+23             AZ             STGP           33.711         -117.5355      

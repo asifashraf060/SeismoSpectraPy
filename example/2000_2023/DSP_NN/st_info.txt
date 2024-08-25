@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+994            NN             DSP            37.368         -117.972198    

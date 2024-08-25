@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+515            CI             SCZ2           33.99543       -119.635101    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+60             BK             CMB            38.03455       -120.386513    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+15             AZ             RDM            33.630001      -116.847801    

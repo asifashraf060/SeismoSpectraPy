@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+481            CI             QSD05          32.679699      -116.985397    

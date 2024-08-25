@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+466            CI             Q0075          34.117756      -118.577499    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+412            CI             Q0021          33.722904      -118.053734    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+838            NC             J050           37.61113       -122.477852    

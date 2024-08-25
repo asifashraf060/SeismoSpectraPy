@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1201           NP             5028           32.829         -115.50535     

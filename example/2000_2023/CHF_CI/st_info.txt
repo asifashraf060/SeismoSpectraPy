@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+178            CI             CHF            34.33341       -118.02585     

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1022           NN             SHP            36.5047        -115.1567      

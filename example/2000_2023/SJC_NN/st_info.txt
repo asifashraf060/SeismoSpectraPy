@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1023           NN             SJC            38.3491        -119.44        

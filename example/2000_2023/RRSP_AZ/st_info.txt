@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+16             AZ             RRSP           33.651501      -116.739403    

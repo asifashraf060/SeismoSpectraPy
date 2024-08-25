@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+266            CI             HEC            34.8294        -116.335       

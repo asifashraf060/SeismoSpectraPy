@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+731            NC             C069           37.647751      -121.896057    

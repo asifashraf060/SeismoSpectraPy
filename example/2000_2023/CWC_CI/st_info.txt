@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+206            CI             CWC            36.439049      -118.080498    

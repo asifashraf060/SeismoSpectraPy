@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+342            CI             MPP            34.88848       -119.81362     

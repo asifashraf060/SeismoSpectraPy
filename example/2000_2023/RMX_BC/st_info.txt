@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+37             BC             RMX            32.5535        -116.0288      

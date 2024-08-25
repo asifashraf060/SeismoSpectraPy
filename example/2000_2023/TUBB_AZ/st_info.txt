@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+28             AZ             TUBB           33.210098      -116.409103    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+378            CI             PHL            35.40773       -120.54556     

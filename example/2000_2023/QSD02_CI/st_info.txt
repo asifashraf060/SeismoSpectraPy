@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+478            CI             QSD02          32.694851      -117.143921    

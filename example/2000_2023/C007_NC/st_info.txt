@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+669            NC             C007           37.895573      -122.262802    

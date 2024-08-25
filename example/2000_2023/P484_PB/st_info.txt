@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1416           PB             P484           33.375591      -116.620842    

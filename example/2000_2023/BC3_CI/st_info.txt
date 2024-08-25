@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+149            CI             BC3            33.65515       -115.45366     

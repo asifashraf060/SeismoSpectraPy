@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1258           NP             5274           32.96246       -115.81474     

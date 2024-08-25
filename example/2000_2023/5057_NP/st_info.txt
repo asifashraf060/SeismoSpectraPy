@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1217           NP             5057           32.89413       -115.38142     

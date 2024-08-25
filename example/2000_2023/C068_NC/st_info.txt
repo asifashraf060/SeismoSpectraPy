@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+730            NC             C068           37.644638      -122.074051    

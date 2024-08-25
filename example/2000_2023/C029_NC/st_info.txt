@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+691            NC             C029           37.788818      -121.971252    

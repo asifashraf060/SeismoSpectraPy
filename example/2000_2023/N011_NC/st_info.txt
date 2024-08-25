@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+912            NC             N011           38.303661      -122.680763    

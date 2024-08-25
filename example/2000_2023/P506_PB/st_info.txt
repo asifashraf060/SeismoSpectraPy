@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1420           PB             P506           33.081429      -115.510201    

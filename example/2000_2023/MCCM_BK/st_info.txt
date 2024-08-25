@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+87             BK             MCCM           38.144779      -122.88018     

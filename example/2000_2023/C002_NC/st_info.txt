@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+664            NC             C002           37.558453      -122.034508    

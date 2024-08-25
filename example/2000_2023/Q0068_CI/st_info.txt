@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+459            CI             Q0068          35.111675      -117.976654    

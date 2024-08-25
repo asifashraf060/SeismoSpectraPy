@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1425           PB             RAAP           33.042236      -116.917252    

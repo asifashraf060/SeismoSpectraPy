@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1412           PB             P248           37.975609      -121.868698    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+10             AZ             KNW            33.7141        -116.7119      

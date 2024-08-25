@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1453           SB             WLA03          33.097599      -115.530602    

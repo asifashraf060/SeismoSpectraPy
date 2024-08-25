@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1014           NN             NELL           36.219101      -115.037003    

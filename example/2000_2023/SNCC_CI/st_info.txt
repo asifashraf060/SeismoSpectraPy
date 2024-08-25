@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+541            CI             SNCC           33.247871      -119.524368    

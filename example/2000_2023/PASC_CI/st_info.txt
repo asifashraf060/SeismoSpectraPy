@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+369            CI             PASC           34.17141       -118.18523     

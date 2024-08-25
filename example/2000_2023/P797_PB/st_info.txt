@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1421           PB             P797           33.537292      -116.592529    

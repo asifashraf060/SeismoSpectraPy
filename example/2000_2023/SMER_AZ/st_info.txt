@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+20             AZ             SMER           33.457699      -117.170799    

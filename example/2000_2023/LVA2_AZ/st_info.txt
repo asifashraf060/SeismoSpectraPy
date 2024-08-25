@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+11             AZ             LVA2           33.351601      -116.561501    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1000           NN             LHV            38.2513        -118.5049      

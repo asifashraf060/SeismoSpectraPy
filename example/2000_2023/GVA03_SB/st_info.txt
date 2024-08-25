@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1444           SB             GVA03          33.6688        -116.672997    

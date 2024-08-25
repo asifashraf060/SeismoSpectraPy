@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+7              AZ             HSSP           33.584702      -116.664101    

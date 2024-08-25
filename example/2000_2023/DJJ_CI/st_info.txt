@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+215            CI             DJJ            34.10618       -118.45505     

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+765            NC             CUSLD          37.76421       -122.094193    

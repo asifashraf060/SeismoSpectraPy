@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1447           SB             GVDA           33.6689        -116.6738      

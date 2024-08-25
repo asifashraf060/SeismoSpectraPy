@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+184            CI             CIA            33.401898      -118.415021    

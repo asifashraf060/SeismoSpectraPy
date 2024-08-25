@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1408           PB             P198           38.259876      -122.607452    

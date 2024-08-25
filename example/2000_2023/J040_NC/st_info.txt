@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+828            NC             J040           37.804688      -122.434738    

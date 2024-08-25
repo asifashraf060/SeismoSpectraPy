@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1018           NN             PRN            37.4065        -115.0512      

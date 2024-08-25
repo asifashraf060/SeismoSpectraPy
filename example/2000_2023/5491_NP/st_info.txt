@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1335           NP             5491           32.82288       -116.529307    

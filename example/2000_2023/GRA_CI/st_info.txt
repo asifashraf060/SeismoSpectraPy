@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+259            CI             GRA            36.996078      -117.366211    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+479            CI             QSD03          33.526409      -117.598824    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+849            NC             J061           37.730572      -122.497421    

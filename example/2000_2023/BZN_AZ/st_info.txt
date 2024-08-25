@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+0              AZ             BZN            33.4915        -116.667       

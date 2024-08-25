@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+6              AZ             GARR           33.591801      -116.670799    

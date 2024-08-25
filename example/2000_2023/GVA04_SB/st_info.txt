@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1445           SB             GVA04          33.6688        -116.672997    

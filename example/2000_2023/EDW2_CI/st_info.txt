@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+226            CI             EDW2           34.8811        -117.993881    

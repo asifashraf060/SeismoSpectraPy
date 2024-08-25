@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+27             AZ             TRO            33.5234        -116.4257      

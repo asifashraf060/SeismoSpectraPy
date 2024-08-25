@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+2              AZ             CRY            33.5654        -116.7373      

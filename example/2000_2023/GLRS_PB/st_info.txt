@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1405           PB             GLRS           33.274811      -115.52137     

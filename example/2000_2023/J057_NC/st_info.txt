@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+845            NC             J057           37.78796       -122.463875    

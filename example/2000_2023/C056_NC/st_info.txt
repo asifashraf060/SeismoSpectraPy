@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+718            NC             C056           37.636311      -122.126358    

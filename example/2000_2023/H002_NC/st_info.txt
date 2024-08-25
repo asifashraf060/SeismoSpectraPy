@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+770            NC             H002           36.87709       -121.647385    

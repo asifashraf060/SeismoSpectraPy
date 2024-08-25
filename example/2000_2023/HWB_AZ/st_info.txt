@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+8              AZ             HWB            33.026199      -116.959602    

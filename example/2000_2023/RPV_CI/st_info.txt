@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+496            CI             RPV            33.74346       -118.40412     

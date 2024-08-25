@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+431            CI             Q0040          33.532326      -117.008324    

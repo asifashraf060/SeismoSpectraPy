@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+29             AZ             USGCB          33.03          -116.0853      

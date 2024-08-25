@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+692            NC             C030           37.154915      -121.609894    

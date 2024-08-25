@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+421            CI             Q0030          33.979794      -117.753906    

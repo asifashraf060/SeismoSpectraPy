@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+417            CI             Q0026          33.643051      -117.569427    

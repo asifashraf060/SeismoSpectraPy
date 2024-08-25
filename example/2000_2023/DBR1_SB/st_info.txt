@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1441           SB             DBR1           35.1877        -120.8113      

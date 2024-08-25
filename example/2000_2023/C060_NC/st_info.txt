@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+722            NC             C060           37.58482       -122.027122    

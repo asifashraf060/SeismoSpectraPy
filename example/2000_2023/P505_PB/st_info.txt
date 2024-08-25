@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1419           PB             P505           33.423874      -115.686996    

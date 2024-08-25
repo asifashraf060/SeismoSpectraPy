@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+578            CI             TUQ            35.43584       -115.92389     

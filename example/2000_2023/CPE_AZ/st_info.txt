@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1              AZ             CPE            32.888901      -117.105103    

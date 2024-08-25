@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+527            CI             SLA            35.89095       -117.28332     

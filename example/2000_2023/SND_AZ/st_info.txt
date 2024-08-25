@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+21             AZ             SND            33.551899      -116.6129      

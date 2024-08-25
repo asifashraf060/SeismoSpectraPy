@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+132            CI             ADO            34.550461      -117.433907    

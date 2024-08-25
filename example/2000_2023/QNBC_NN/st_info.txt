@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1019           NN             QNBC           38.1947        -119.0054      

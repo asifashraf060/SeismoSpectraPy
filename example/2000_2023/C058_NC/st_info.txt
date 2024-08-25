@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+720            NC             C058           37.75642       -122.225761    

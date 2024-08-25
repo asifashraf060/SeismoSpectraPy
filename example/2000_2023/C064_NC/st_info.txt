@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+726            NC             C064           37.805119      -122.18457     

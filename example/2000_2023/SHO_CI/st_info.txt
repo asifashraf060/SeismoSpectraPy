@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+522            CI             SHO            35.899529      -116.275299    

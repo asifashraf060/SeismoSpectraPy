@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+420            CI             Q0029          33.726509      -117.747889    

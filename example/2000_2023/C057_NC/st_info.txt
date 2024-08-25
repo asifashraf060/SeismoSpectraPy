@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+719            NC             C057           37.95554       -121.697876    

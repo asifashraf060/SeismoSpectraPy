@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+406            CI             Q0015          34.37468       -118.548836    

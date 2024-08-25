@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1424           PB             POTR           32.618412      -116.590866    

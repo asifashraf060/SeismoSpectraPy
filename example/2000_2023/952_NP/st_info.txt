@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1360           NP             952            32.8551        -115.46585     

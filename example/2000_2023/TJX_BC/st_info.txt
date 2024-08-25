@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+38             BC             TJX            32.51017       -117.0543      

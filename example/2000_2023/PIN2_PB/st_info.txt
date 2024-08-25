@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1422           PB             PIN2           33.612148      -116.457619    

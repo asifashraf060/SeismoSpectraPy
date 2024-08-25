@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1219           NP             5060           32.991         -115.5128      

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+703            NC             C041           37.375698      -121.826088    

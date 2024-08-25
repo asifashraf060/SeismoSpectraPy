@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+14             AZ             PFO            33.611698      -116.459396    

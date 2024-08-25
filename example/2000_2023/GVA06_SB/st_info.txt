@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1446           SB             GVA06          33.6689        -116.673798    

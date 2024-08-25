@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1406           PB             P176           37.471775      -122.35714     

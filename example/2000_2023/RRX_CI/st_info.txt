@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+498            CI             RRX            34.875332      -116.996841    

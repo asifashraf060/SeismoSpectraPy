@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1426           PB             SIO5           32.840736      -117.249695    

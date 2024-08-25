@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1442           SB             DBR2           35.188         -120.8098      

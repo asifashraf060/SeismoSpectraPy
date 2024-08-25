@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+482            CI             QSD06          33.1334        -117.333504    

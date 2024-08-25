@@ -6,11 +6,12 @@ Created on Sun Mar 17 20:33:59 2024
 @author: asifashraf
 """
 ## INPUT
-root_dir  = '/Users/asifashraf/Documents/Fq_Decomp/example/RidgeCrest_2019'
-min_eq    = 1;
+root_dir  = '/Users/asifashraf/Documents/Fq_Decomp/example/2000_2023'
+min_eq    = 15;
 
 ## IMPORT
 from pathlib import Path
+from scipy.signal import find_peaks
 
 from toolbox import spectrogram
 from toolbox import mt_spectra
@@ -40,7 +41,7 @@ for root, dirs, files in os.walk(root_dir):
 
 print('Found ' + str(len(dir_DataFolder)) + ' station folders with data')
 
-for i in range(len(dir_DataFolder)):
+for i in range(332, len(dir_DataFolder)):
     
     ## LOAD FILES FROM THE FOLDER
     print('Station: (' + str(i+1) + '/' + str(len(dir_DataFolder)) + ')')
@@ -57,7 +58,7 @@ for i in range(len(dir_DataFolder)):
 
     # Data files
     mseed_files = glob.glob(str(folder_path) + '/*.mseed')
-    print('    Found ' + str(len(mseed_files)) + ' mseed files for station: ' + str(st_code))
+    print('    Found ' + str(len(mseed_files)) + ' mseed files for ' +str(len(df)) +' earthquakes')
     
     if len(df)>=min_eq:
     
@@ -113,25 +114,38 @@ for i in range(len(dir_DataFolder)):
                 plt.plot(len(mseed_path)+1, 2, '*r')
                 plt.title('EQ: ' + str(eq_time))
                 plt.ylim([0, 3])
-                tr_clck = np.asarray(plt.ginput(n = 1, timeout = 0))
+                tr_clck = np.asarray(plt.ginput(n = 100, timeout = 0, show_clicks=True))
     
                 # preferred trace number
-                tr_prf = round(tr_clck[0][0]) - 1
+                tr_prf = []
+                for ii in range(len(tr_clck)):
+                    tr_prf.append(round(tr_clck[ii][0]) - 1)
                 
-                if tr_prf<len(mseed_path): # If the seleceted trace number valid, continue
-                                          # otherwise, skipping the earthquake
-                    tr          = read(mseed_path[tr_prf], attach_response = True)
-                    tr          = tr[0]
-            
-                    tt          = (tr.stats.npts/tr.stats.sampling_rate)   #total time of the seismogram
-                    npts        = tr.stats.npts                            #number of samples in seismogram
-                    dt          = tt/npts                                  #t1-t2
-                    t           = np.linspace(0,tt,npts)
+                if any(kk<len(mseed_path) for kk in tr_prf): # If the seleceted trace number is valid, continue
+                                                              # otherwise, skipping the earthquake
                     
+                    tr_total = np.array([])
+                    tr_npts = 0
+                    tr_tt = 0
+                    for jj in range(len(tr_prf)):  # loop through every selected trace and add them
+                    
+                        tr = read(mseed_path[tr_prf[jj]], attach_response = True)
+                        tr = tr[0]
+                        tr_total = np.concatenate((tr_total, tr.data), axis=None)
+            
+                        tt   = (tr.stats.npts/tr.stats.sampling_rate)   #total time of the seismogram
+                        tr_tt = tt + tr_tt
+                        
+                        npts = tr.stats.npts                            #number of samples in seismogram
+                        tr_npts = tr_npts + npts
+                        
+                    dt = tr_tt/tr_npts                                  #t1-t2
+                    t  = np.linspace(0,tr_tt,tr_npts)
+                
                     print('            Selected trace no: ' +  str(tr_prf))
     
                     plt.close('all')
-                    plt.plot(t, tr.data, '-b')
+                    plt.plot(t, tr_total, '-b')
                     plt.title('Choose two points')
                     t12 = np.asarray(plt.ginput(n = 2, timeout = 0))
                     
@@ -139,15 +153,33 @@ for i in range(len(dir_DataFolder)):
                     ind1   = np.where(abs(t-x1) == min(abs(t-x1)))
                     ind2   = np.where(abs(t-x2) == min(abs(t-x2)))
                     
-                    t = t[int(ind1[0]):int(ind2[0])]
-                    data = tr.data[int(ind1[0]):int(ind2[0])]
+                    tt   = t # need to use it later
+                    t    = t[int(ind1[0]):int(ind2[0])]
+                    data = tr_total[int(ind1[0]):int(ind2[0])]
                             
-                    # Multitaper Spectral Analysis
+                    # MULTITAPER SPECTRAL ANALYSIS
                     print('           ' + ' Calculating Multitaper PSD ... ')
                     
                     psd, freq, ci_lower, ci_upper = mt_spectra(data, dt, 4, 7)
+                    
+                    ### automated picking peaks of psd
+                    FqF_ind  = np.where(freq>1)                # indices to filter for fq > 1
+                    Fq_filt  = freq[FqF_ind[0]]                # apply that filter for freq
+                    psd_filt = psd[FqF_ind[0]]                 # and the PSD array
+                    psd_smth = np.convolve(psd_filt.flatten(), np.ones(10)/10, mode='valid') # smoothen out the psd with moving average to make fewer peaks
+                    fq_smth  = Fq_filt[range(len(psd_smth))]
+                    peak_ind = find_peaks(psd_smth)            # find the peaks
+                    psd_peak = psd_smth[peak_ind[0]]           # psd for the peaks
+                    fq_peak  = fq_smth[peak_ind[0]]            # fq for the peaks
+                    
+                    threshold = np.percentile(psd_peak, 98)    # only choose the top 5% peaks
+                    top_5     = np.where(psd_peak > threshold)
+                    psd_Tpeak = psd_peak[top_5]
+                    fq_Tpeak  = fq_peak[top_5]
+
+
             
-                    # Emperical Mode Decomposition
+                    # EMPERICAL MODE DECOMPOSITION
                     print('           ' + ' Calculating EMD ... ')
                 
                     min_period  = 2*dt #Nyquist
@@ -162,33 +194,31 @@ for i in range(len(dir_DataFolder)):
                     plt.figure(figsize = (20,5))
             
                     plt.subplot(1,5,1)
-                    plt.plot(t, data, '-b')
+                    plt.plot(tt, tr_total, '-b')
+                    plt.plot([x1, x2], [0, 0], '+r')
                     plt.xlabel('time (sec)')
                     plt.ylabel('accelaration (m/s)')
                     plt.title('seismogram no ' + str(j) + ' (EQ:' + eq_name + ')')
                     
                     plt.subplot(1,5,2)
-                    plt.semilogx(freq,psd)
+                    plt.semilogx(freq,psd, 'b', linewidth=3)
+                    plt.semilogx(fq_smth,psd_smth, '--y', linewidth=1)
+                    plt.plot(fq_Tpeak, psd_Tpeak, '+r')
                     plt.xlabel('Frequency (Hz)')
                     plt.ylabel('amplitude')
-                    plt.title('Choose freq values')
-                    pts = np.asarray(plt.ginput(n = 100, timeout = 0, show_clicks=(True)))
+                    plt.title('PSD')
                     
                     # Freq from PSD
-                    fq_pts      = pts[:,0]
-                    amp_pts     = pts[:,1]
-                    dominant_fq = fq_pts[amp_pts.argmax()]                  # dominant frequency
-                    max_fq      = max(fq_pts)                               # maximum frequency
-                    err         = np.std(fq_pts * amp_pts/amp_pts.max())    # error of picking
+                    dominant_fq = fq_Tpeak[psd_Tpeak.argmax()]                  # dominant frequency
+                    max_fq      = max(fq_Tpeak)                                 # maximum frequency
+                    err         = np.std(fq_Tpeak * psd_Tpeak/psd_Tpeak.max())  # error of picking
                     
-                    plt.plot(fq_pts, amp_pts, '+r')
-                    plt.title('PSD')
                     
                     plt.subplot(1,5,3)
                     plt.pcolormesh(timeSpec, 1/periodSpec, np.abs(ampSpec), cmap='hot')
-                    plt.ylim([0, fq_pts.max()+2])
-                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_pts.max()], '-g')
-                    for kk in fq_pts:
+                    plt.ylim([0, fq_Tpeak.max()+2])
+                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_Tpeak.max()], '-g')
+                    for kk in fq_Tpeak:
                         plt.plot(t, np.zeros(len(t))+kk, '--c', linewidth = .5)
                     plt.plot(t, np.zeros(len(t))+dominant_fq, '--c', linewidth = 1)
                     plt.ylabel('Frequency (Hz)')
@@ -197,17 +227,17 @@ for i in range(len(dir_DataFolder)):
                     
                     plt.subplot(1,5,4)
                     plt.pcolormesh(timeSpec, 1/periodSpec, np.abs(ampSpec), norm = colors.LogNorm(vmin = 0.0001, vmax = ampSpec.max()), cmap='hot')
-                    plt.ylim([0, fq_pts.max()])
-                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_pts.max()], '-g')
+                    plt.ylim([0, fq_Tpeak.max()])
+                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_Tpeak.max()], '-g')
                     plt.ylabel('Frequency (Hz)')
                     plt.xlabel('Time (sec)')
                     plt.title('EMD (log-scale)')
                     
                     plt.subplot(1,5,5)
                     plt.pcolormesh(timeSpec, 1/periodSpec, norm_ampSpec, vmin = np.percentile(norm_ampSpec.flatten(), 99), vmax = np.max(norm_ampSpec), cmap='hot')
-                    plt.ylim([0, fq_pts.max()])
-                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_pts.max()], '--g', linewidth = .5)
-                    for kk in fq_pts:
+                    plt.ylim([0, fq_Tpeak.max()])
+                    plt.plot(np.zeros(2)+t[data.argmax()], [0, fq_Tpeak.max()], '--g', linewidth = .5)
+                    for kk in fq_Tpeak:
                         plt.plot(t, np.zeros(len(t))+kk, '--c', linewidth = .5)
                     plt.plot(t, np.zeros(len(t))+dominant_fq, '--c', linewidth = 1)
                     plt.ylabel('Frequency (Hz)')
@@ -221,32 +251,29 @@ for i in range(len(dir_DataFolder)):
                     # append the results into the empty arrays
                     no.append(eq_no)
                     name.append(eq_name) 
-                    trc.append(round(tr_prf))
                     dist.append(hypo_dist)
                     lat.append(eq_lat) 
                     lon.append(eq_lon) 
                     dp.append(eq_dp) 
                     mg.append(eq_mg)
-                    dm_fq.append(round(dominant_fq))
-                    mx_fq.append(round(max_fq))
+                    dm_fq.append(round(dominant_fq[0]))
+                    mx_fq.append(round(max_fq[0]))
                     errs.append(round(err))
+                    
                 else:
                     print('            skipping EQ ...')
-                
+       
+        # write and save the picking
+        with open(str(folder_path) + '/Analysis/EQ_fq_decomp_result.txt' , 'w') as file:            
+            file.write(f"{'no':<15}{'name':<15}{'lat':<15}{'lon':<15}{'depth':<15}{'mag':<15}{'dist':<15}{'fq':<15}{'mxFq':<15}{'err':<15}\n")
+            for eq_nums, eq_names, eq_lats, eq_lons, eq_depths, eq_mags, eq_dists, eq_fq, eq_fqM, eq_err in zip(no, name, lat, lon, dp, mg, dist, dm_fq, mx_fq, errs):
+                file.write(f"{eq_nums:<15}{eq_names:<15}{eq_lats:<15}{eq_lons:<15}{eq_depths:<15}{eq_mags:<15}{eq_dists:<15}{eq_fq:<15}{eq_fqM:<15}{eq_err:<15}\n")
+
             else:
                 print('             cant find mseed')
     else:
         print('    Does not exceed minimum eq requirement')
-        # write result in a text file
-    with open(str(folder_path) + '/Analysis/EQ_fq_decomp_result.txt' , 'w') as file:            
-        file.write(f"{'no':<15}{'name':<15}{'lat':<15}{'lon':<15}{'depth':<15}{'mag':<15}{'dist':<15}{'traces':<15}{'fq':<15}{'mxFq':<15}{'err':<15}\n")
-        for eq_nums, eq_names, eq_lats, eq_lons, eq_depths, eq_mags, eq_dists, eq_traces, eq_fq, eq_fqM, eq_err in zip(no, name, lat, lon, dp, mg, dist, trc, dm_fq, mx_fq, errs):
-            file.write(f"{eq_nums:<15}{eq_names:<15}{eq_lats:<15}{eq_lons:<15}{eq_depths:<15}{eq_mags:<15}{eq_dists:<15}{eq_traces:<15}{eq_fq:<15}{eq_fqM:<15}{eq_err:<15}\n")
-
-        
-        
-    
-    
+ 
     
     
     

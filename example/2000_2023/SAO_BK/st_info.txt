@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+109            BK             SAO            36.76403       -121.44722     

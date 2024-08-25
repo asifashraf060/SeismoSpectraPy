@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+22             AZ             SOL            32.841         -117.248001    

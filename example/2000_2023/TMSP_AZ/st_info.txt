@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+24             AZ             TMSP           33.619202      -116.680901    

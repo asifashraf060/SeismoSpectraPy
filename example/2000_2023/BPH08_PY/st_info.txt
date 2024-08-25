@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1431           PY             BPH08          33.6106        -116.457901    

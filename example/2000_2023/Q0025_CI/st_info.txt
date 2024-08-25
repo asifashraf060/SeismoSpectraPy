@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+416            CI             Q0025          33.092083      -116.646996    

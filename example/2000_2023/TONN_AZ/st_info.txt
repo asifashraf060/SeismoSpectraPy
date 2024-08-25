@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+25             AZ             TONN           33.1442        -116.1193      

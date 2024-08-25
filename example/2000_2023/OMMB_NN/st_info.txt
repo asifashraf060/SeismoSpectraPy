@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1016           NN             OMMB           37.613098      -119.000504    

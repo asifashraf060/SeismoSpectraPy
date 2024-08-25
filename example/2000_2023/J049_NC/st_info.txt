@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+837            NC             J049           37.588139      -122.458687    

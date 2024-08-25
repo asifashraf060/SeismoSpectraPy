@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+145            CI             BAR            32.68005       -116.67215     

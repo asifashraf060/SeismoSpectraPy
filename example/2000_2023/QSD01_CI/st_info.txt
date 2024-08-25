@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+477            CI             QSD01          32.91716       -117.030319    

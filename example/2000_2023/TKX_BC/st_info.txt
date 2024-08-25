@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+39             BC             TKX            32.5687        -116.6075      

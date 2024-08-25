@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+144            CI             BAK            35.34444       -119.10445     

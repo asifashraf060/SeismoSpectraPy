@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+401            CI             Q0010          33.445568      -117.638329    

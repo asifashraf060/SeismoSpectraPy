@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+350            CI             MWC            34.22362       -118.05832     

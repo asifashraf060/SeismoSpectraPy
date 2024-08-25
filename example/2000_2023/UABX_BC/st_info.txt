@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+40             BC             UABX           32.6316        -115.4447      

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+26             AZ             TRAN           33.4955        -116.5834      

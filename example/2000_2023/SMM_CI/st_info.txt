@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+535            CI             SMM            35.3142        -119.99581     

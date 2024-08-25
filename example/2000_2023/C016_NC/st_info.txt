@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+678            NC             C016           37.396355      -121.867027    

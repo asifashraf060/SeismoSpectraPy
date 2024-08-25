@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+153            CI             BFS            34.23883       -117.65853     

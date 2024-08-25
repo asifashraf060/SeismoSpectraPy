@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1414           PB             P482           33.240181      -116.671417    

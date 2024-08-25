@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1454           SB             WLA04          33.097599      -115.530602    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+152            CI             BEL            34.0006        -115.9982      

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+769            NC             H001           36.922497      -121.740196    

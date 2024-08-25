@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+799            NC             J011           37.369469      -122.213707    

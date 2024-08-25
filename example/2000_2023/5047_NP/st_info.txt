@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1211           NP             5047           33.34866       -116.40017     

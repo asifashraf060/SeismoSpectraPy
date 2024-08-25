@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+397            CI             Q0006          33.133739      -117.11084     

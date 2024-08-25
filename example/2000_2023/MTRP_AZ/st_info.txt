@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+13             AZ             MTRP           32.8203        -117.0567      

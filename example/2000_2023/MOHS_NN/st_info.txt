@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1012           NN             MOHS           36.2547        -115.138397    

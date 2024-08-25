@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1030           NN             WTNK           36.1917        -115.0106      

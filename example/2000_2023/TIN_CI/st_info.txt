@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+572            CI             TIN            37.054218      -118.230087    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+212            CI             DEC            34.253529      -118.333832    

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+584            CI             VES            35.840889      -119.084686    

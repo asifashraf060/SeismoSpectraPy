@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+673            NC             C011           37.906418      -122.292381    

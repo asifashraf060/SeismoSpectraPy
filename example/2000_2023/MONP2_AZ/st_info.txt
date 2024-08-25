@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+12             AZ             MONP2          32.891998      -116.422302    

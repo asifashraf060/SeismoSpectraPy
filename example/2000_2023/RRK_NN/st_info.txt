@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1021           NN             RRK            36.0656        -115.4668      

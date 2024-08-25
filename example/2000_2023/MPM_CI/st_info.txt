@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+341            CI             MPM            36.05799       -117.48901     

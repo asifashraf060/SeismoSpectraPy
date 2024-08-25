@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+334            CI             MLAC           37.630192      -118.836052    

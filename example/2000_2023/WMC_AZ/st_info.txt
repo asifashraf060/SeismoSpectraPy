@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+30             AZ             WMC            33.573601      -116.674698    

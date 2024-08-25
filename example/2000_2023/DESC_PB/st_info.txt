@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1404           PB             DESC           32.829922      -116.6418      

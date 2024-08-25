@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+455            CI             Q0064          34.074787      -118.942451    

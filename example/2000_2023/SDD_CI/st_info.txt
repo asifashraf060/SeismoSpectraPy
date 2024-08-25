@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+516            CI             SDD            33.552589      -117.661713    

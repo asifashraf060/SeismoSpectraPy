@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+279            CI             IKP            32.65012       -116.10948     

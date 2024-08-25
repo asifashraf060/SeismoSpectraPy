@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+5              AZ             FRD            33.494701      -116.602203    

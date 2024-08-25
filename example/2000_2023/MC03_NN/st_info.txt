@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1006           NN             MC03           38.199         -117.9849      

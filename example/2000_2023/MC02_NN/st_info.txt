@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1005           NN             MC02           38.1391        -117.9595      

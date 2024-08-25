@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+19             AZ             SGBF           33.536499      -116.592903    

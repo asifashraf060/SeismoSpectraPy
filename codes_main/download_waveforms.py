@@ -21,18 +21,18 @@ import os
 # Directory of station file
 theFile = '/Users/asifashraf/Documents/Fq_Decomp/example/gmap-stations (4).txt'
 # Radius around the station
-rd = 200 # in km
+rd = 1000 # in km
 # length of second to cut the seismogram in time
 lsec = 200
 # Minimum magnitude to search EQ for
-minmagnitude  = 4
+minmagnitude  = 4.5
 # start and end time for searching
-starttime     = datetime(2019, 7, 3, 0, 0) #YY/MM/DD
-endtime       = datetime(2019, 7, 7, 0, 0)
+starttime     = datetime(2000, 1, 1, 0, 0) #YY/MM/DD
+endtime       = datetime(2023, 12, 31, 0, 0)
 # Channel
 chn           = 'HNE'
 # directory to store the result
-out_dir = '/Users/asifashraf/Documents/Fq_Decomp/example/RidgeCrest_2019/';
+out_dir = '/Users/asifashraf/Documents/Fq_Decomp/example/2000_2023/';
 
 ## CALCULATION
 

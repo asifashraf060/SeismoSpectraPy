@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+562            CI             SWS            32.94508       -115.79988     

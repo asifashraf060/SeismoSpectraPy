@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+733            NC             C071           37.682144      -122.133217    

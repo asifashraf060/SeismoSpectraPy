@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+560            CI             SVD            34.10647       -117.09822     

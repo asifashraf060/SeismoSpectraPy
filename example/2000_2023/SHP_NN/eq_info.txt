@@ -1,0 +1,2 @@
+no                            name                          time                          lat                           lon                           depth                         mag                           dist                          
+1                             nn00495477                    2015-05-22T18:47:42.980000Z   37.2925                       -114.6546                     4                             5.3                           98.0                          

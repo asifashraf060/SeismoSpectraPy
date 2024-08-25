@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+1432           PY             BPH13          33.6092        -116.459999    

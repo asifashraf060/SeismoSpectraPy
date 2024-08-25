@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+511            CI             SBC            34.44076       -119.71492     

@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+677            NC             C015           37.559444      -121.993729    

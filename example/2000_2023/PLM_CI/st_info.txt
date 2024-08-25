@@ -1,0 +1,2 @@
+no             netcode        station        lat            lon            
+379            CI             PLM            33.35361       -116.86265     
